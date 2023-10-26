@@ -10,5 +10,3 @@ const sortElements = (arr, direction) => {
   const sortedArray = sortElements(elements, 'asc');
   
   console.log(sortedArray);
-  
-  //Работает
