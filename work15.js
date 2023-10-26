@@ -1,4 +1,5 @@
 const longArray = (length) =>{
+    
     let arr = [];
     const string = "x";
     let text = "";
