@@ -6,12 +6,9 @@ let test =
 {name: '', age: null, country: 'RF'}];
 
 
-let newObj = test.filter((name, age, country) =>
-{
+let newObj = test.filter((name, age, country) =>{
+  
   return Object.values(name, age, country).some((value) => value)
 });
 
-console.log(newObj)
-
-
-//Решено
+console.log(newObj);
