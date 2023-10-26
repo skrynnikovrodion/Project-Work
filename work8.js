@@ -1,17 +1,8 @@
 const sortFunk = (users, task) =>{
-let result
 
-if (task == "desc"){
-    result = users.sort((a, b) => a.age < b.age ? 1 : -1);
+    let result = (task === "desc") ? users.sort((a, b) => a.age < b.age ? 1 : -1) : users.sort((a, b) => a.age > b.age ? 1 : -1);
 
-}
-
-else{
-    result = users.sort((a, b) => a.age > b.age ? 1 : -1);
-    
-}
-
-return result
+    return result
 }
 
 let asc = "asc";
@@ -23,4 +14,4 @@ const arr = [
     {name: 'test1', age: 54, country: 'RF'}
   ]
 
-console.log(sortFunk(arr, asc))
+console.log(sortFunk(arr, asc));
