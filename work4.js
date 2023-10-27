@@ -1,9 +1,9 @@
-const randomFunc = (number) =>{
-    let random = Math.floor(Math.random() * number.length);
+const generatrandom = (number) =>{
+  const random = Math.floor(Math.random() * number.length);
 
-    return number[random];
+  return number[random];
 }
 
 const arr = [4, 8, 2, 9, 4, 6, 5, 1, 7, 4];
 
-console.log(randomFunc(arr));
+console.log(generatrandom(arr));
