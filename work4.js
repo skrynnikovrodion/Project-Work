@@ -1,4 +1,4 @@
-const generatrandom = (number) =>{
+const generatrandom = (number) => {
   const random = Math.floor(Math.random() * number.length);
 
   return number[random];
