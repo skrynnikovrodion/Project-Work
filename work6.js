@@ -1,11 +1,10 @@
-const resultArray = (array) => {
+const additArray = (array) => {
   const resultObject = {};
   
   for (let item of array) {
-
     const resultValue = resultObject[item.name];
+    
     if (resultValue) {
-  
       resultValue.price += item.price;
     } else {
   
