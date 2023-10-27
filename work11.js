@@ -1,7 +1,11 @@
-const string = 'abcbacabcbcabcbaba';
+const testString = (string) => {
+  let mastring = string.split();
+  
+  const result = mastring.map(e => /^[a-c]+$/.test(e));
 
-let mastring = string.split();
+  return result;
+}
 
-const result = mastring.map(e => /^[a-c]+$/.test(e));
+const abracadabra = 'abcbacabcbcabcbaba';
 
-console.log(result);
+console.log(testString(abracadabra));
