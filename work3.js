@@ -1,12 +1,14 @@
-const findError = (string) =>{
-    let result = '';
-    find = string.slice(0,3);
-    start_replace = 'abc';
-
-    result = (find === start_replace) ? result = 'www' + string.slice(3) : result = string + 'zzz';
+const replacementFunc = (string) =>{
+  let result = '';
+  const exam = string.slice(0,3);
+  const start_replace = 'abc';
     
-    return result;
+  result = (exam === start_replace)
+  ? 'www' + string.slice(3) 
+  : string + 'zzz';
+
+  return result;
 }
 
 const input = 'testabctext';
-console.log(findError(input));
+console.log(replacementFunc(input));  
