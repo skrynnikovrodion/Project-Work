@@ -1,5 +1,4 @@
 const longArray = (length) =>{
-    
     let arr = [];
     const string = "x";
     let text = "";
@@ -7,9 +6,7 @@ const longArray = (length) =>{
     for (let i = 0; i < length; i++){
         
         text += string;
-
         arr += text + "\n";
-
     }
 
     return arr;
