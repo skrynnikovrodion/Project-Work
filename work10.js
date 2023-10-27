@@ -1,25 +1,23 @@
-const replaceFunc = (string) =>{
+const renameFunc = (string) =>{
+  const mastring = [];
 
-    let newMaString = [];
+  for (let i = 0; i < string.length; i++){
+		switch (string[i] ) {
+			case '_':
+				mastring.push(0);
+				break;
+				
+			case '-':
+				mastring.push(1);
+				break;
+		}
+	}
 
-    for (let i = 0; i < string.length; i++){
+  const result = mastring.join("");
 
-        if (string[i] == '_'){
-            
-            newMaString.push(0);
-        }
-
-        if (string[i] == '-'){
-            
-            newMaString.push(1);
-        }
-    }
-
-    const result = newMaString.join("");
-
-    return result;
+  return result;
 }
 
 const replace_string = '__|----|_|-|____|--';
 
-console.log(replaceFunc(replace_string));
+console.log(renameFunc(replace_string));
