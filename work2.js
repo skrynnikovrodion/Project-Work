@@ -1,17 +1,14 @@
-const lineOutput = (string) =>{
-    
+const examinationOutput = (string) =>{
     let newString = '';
-    const long = string.length; 
+    const stringlong = string.length; 
     
     if (string.length > 5){
         newString = string.slice(0, 3) + string.slice(-3);
 
         return newString;
-    }
-    else 
+    }else 
         
    for (let i = 1; i < long; i++) {
-       
         newString = newString + string.slice(0,1);
     }
 
@@ -19,4 +16,4 @@ const lineOutput = (string) =>{
 }
 
 const words = 'text';
-console.log(lineOutput(words));
+console.log(examinationOutput(words));
