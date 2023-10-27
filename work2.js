@@ -1,4 +1,5 @@
 const lineOutput = (string) =>{
+    
     let newString = '';
     const long = string.length; 
     
@@ -12,7 +13,6 @@ const lineOutput = (string) =>{
    for (let i = 1; i < long; i++) {
        
         newString = newString + string.slice(0,1);
-
     }
 
     return newString;
