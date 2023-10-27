@@ -3,12 +3,13 @@
     width: 300px;
     background: #333;
     color: #fff; 
+    
     position: fixed; 
     min-height: 100px; 
     top: 100px; left: -300px;
+    
     border-right: 20px solid #fc0; 
     transition: left 1s;
-
 }
 
 img {
@@ -18,17 +19,22 @@ img {
     height: 100px;
     width: 100px;
 }
+
 .fix_backcall::after {
     content: 'Обратная связь'; 
     color: #000; 
+    
     position: absolute;
     right: -60px; bottom: 50px;
+    
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
 }
+
 .fix_backcall:hover {
     left: 0;
 }
+
 p {
     top: 10px;
 }
