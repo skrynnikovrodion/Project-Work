@@ -7,20 +7,12 @@ const maxminFunc = (array) =>{
 
     for (let i = 0; i < array.length; i++){
 
-        if (array[KeyMax] > array[i]){}
-        
-        else
-        KeyMax = i;
-
+        KeyMax = (array[KeyMax] > array[i]) ? KeyMax : i;
     }
 
     for (let j = 0; j < array.length; j++){
 
-        if (array[KeyMin] < array[j]){}
-        
-        else
-        KeyMin = j;
-    
+        KeyMax = (array[KeyMax] < array[i]) ? KeyMax : i;
     }
     
     save = newArr[KeyMax];
