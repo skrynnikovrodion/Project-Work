@@ -1,27 +1,24 @@
-const maxminFunc = (array) =>{
-    
-    let KeyMax = 0;
-    let KeyMin = 0;
-    let save = 0;
-    let newArr = array.slice();
+const replacementObj = (array) =>{
+	let indexMax = 0;
+	let indexMin = 0;
+	let save = 0;
+	let newArr = array.slice();
 
-    for (let i = 0; i < array.length; i++){
+	for (let i = 0; i < array.length; i++){
+			indexMax = (array[indexMax] > array[i]) ? indexMax : i;
+	}
 
-        KeyMax = (array[KeyMax] > array[i]) ? KeyMax : i;
-    }
-
-    for (let j = 0; j < array.length; j++){
-
-        KeyMax = (array[KeyMax] < array[i]) ? KeyMax : i;
-    }
-    
-    save = newArr[KeyMax];
-    newArr[KeyMax] = newArr[KeyMin];
-    newArr[KeyMin] = save;
-    
-    return newArr;
+	for (let j = 0; j < array.length; j++){
+			indexMin = (array[indexMin] < array[i]) ? indexMin : i;
+	}
+	
+	save = newArr[indexMax];
+	newArr[indexMax] = newArr[indexMin];
+	newArr[indexMin] = save;
+	
+	return newArr;
 }
 
-const massiv = [5, 7, 2, 9, 5, 6, 3, 1, 8];
+const arr = [5, 7, 2, 9, 5, 6, 3, 1, 8];
 
-console.log(maxminFunc(massiv));
+console.log(replacementObj(arr));
