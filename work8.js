@@ -1,12 +1,12 @@
 const sortFunk = (users, task) =>{
 
-    let result = (task === "desc") ? users.sort((a, b) => a.age < b.age ? 1 : -1) : users.sort((a, b) => a.age > b.age ? 1 : -1);
+    const result = (task === "desc") ? users.sort((a, b) => a.age < b.age ? 1 : -1) : users.sort((a, b) => a.age > b.age ? 1 : -1);
 
     return result
 }
 
-let asc = "asc";
-let desc = "desc";
+const asc = "asc";
+const desc = "desc";
 
 const arr = [
     {name: 'test', age: 34, country: 'RF'},
