@@ -7,7 +7,6 @@ const additArray = (array) => {
     if (resultValue) {
       resultValue.price += item.price;
     } else {
-  
       resultObject[item.name] = { ...item };
     }
   }
