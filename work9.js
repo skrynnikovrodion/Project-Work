@@ -1,7 +1,6 @@
 const duplicatedValues = (array1, array2) => {
   const newArray = [...new Set(array1)];
-  
-	const result= newArray.filter(item => array2.includes(item));
+  const result= newArray.filter(item => array2.includes(item));
 
   return result;
 }
