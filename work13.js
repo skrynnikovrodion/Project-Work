@@ -1,6 +1,8 @@
-const transform = (array) =>{
-    
-    return Object.fromEntries(array.map(({ name, value }) => [name, value]));
+const unionFunc = (array) =>{
+  const result = Object.fromEntries(array.map(({ name, value }) => 
+    [name, value]));
+
+  return result;
 }
 
 const arr = 
