@@ -1,5 +1,5 @@
 const testingStringArr = (testString) => {
-let newObj = testString.filter((name, age, country) => {
+  let newObj = testString.filter((name, age, country) => {
   const result = Object.values(name, age, country).some((value) => value);
   
   return result;
