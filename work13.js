@@ -1,6 +1,6 @@
 const unionFunc = (array) =>{
   const result = Object.fromEntries(array.map(({ name, value }) => 
-    [name, value]));
+  [name, value]));
 
   return result;
 }
