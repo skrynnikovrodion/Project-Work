@@ -2,7 +2,7 @@ const renameFunc = (string) =>{
   const mastring = [];
 
   for (let i = 0; i < string.length; i++){
-		switch (string[i] ) {
+		switch (string[i]) {
 			case '_':
 				mastring.push(0);
 				break;
