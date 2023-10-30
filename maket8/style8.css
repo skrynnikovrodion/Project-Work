@@ -32,13 +32,13 @@ body {
 	width: 55%;
 }
 
-.host-block_line {
+.host-block__content_line {
 	background: rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
 }
 
-.host-block_line::after{
+.host-block__content_line::after{
 	content: "";
   position: absolute;
   top: 0;
