@@ -1,6 +1,8 @@
 const testingStringArr = (testString) => {
 let newObj = testString.filter((name, age, country) => {
-  return Object.values(name, age, country).some((value) => value)
+  const result = Object.values(name, age, country).some((value) => value);
+  
+  return result;
 });
 }
 
