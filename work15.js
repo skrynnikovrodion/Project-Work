@@ -1,17 +1,16 @@
-const longArray = (length) =>{
-    let arr = [];
-    const string = "x";
-    let text = "";
+const increaseFunc = (length) =>{
+  let arr = [];
+  let string = [];
 
-    for (let i = 0; i < length; i++){
-        
-        text += string;
-        arr += text + "\n";
-    }
+  for (let i = 0; i < length; i++){
+	  string += "x";
 
-    return arr;
+    arr += string + "\n";
+  }
+
+  return arr;
 }
 
 let long = 7;
 
-console.log(longArray(long));
+console.log(increaseFunc(long));
