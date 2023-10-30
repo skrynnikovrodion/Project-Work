@@ -1,17 +1,37 @@
-const sortFunk = (users, task) =>{
+const sortFunk = (array, direction, index) =>{
+  let result = [];
 
-    const result = (task === "desc") ? users.sort((a, b) => a.age < b.age ? 1 : -1) : users.sort((a, b) => a.age > b.age ? 1 : -1);
+  switch (index){
+    case 'name':
+      result = array.sort((a, b) => a.name < b.name ? 1 : -1);
+      break;
 
-    return result
+    case 'age':
+      result = array.sort((a, b) => a.age < b.age ? 1 : -1);
+      break;
+
+    case 'country':
+      result = array.sort((a, b) => a.country < b.country ? 1 : -1);
+      break;
+  }
+  
+  switch (direction) {
+    case 'desc':
+      result;
+      break;
+      
+    case 'asc':
+      result.reverse();
+      break;
+  }
+
+  return result;
 }
 
-const asc = "asc";
-const desc = "desc";
-
 const arr = [
-    {name: 'test', age: 34, country: 'RF'},
-    {name: 'test2', age: 12, country: 'RF'},
-    {name: 'test1', age: 54, country: 'RF'}
-  ]
+  {name: 'test', age: 34, country: 'RF'},
+  {name: 'test2', age: 12, country: 'RF'},
+  {name: 'test1', age: 54, country: 'RF'}
+];
 
-console.log(sortFunk(arr, asc));
+console.log(sortFunk(arr, 'asc', 'age'));
