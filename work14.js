@@ -1,5 +1,6 @@
 const getParams = (url = window.location) =>{
   let params = {};
+  
   new URL(url).searchParams.forEach((val, location) => {
     params[location] = (params[location] !== undefined) ? 
     params[location] = (!Array.isArray(params[location])) ? 
