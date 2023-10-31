@@ -1,11 +1,11 @@
 const increaseFunc = (length) =>{
   let arr = [];
-  let string = [];
+  let string = '';
 
   for (let i = 0; i < length; i++){
 		string += "x";
-
-    arr += string + "\n";
+    arr.push(string);
+		arr += "\n";
   }
 
   return arr;
