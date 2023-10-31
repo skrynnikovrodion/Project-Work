@@ -4,11 +4,8 @@ const additArray = (array) => {
   for (let item of array) {
     const resultValue = resultObject[item.name];
     
-    if (resultValue) {
-      resultValue.price += item.price;
-    } else {
-      resultObject[item.name] = { ...item };
-    }
+    resultValue ? resultValue.price += item.price 
+    : resultObject[item.name] = { ...item };
   }
 
   const result = Object.values(resultObject);
