@@ -3,7 +3,7 @@ const increaseFunc = (length) =>{
   let string = [];
 
   for (let i = 0; i < length; i++){
-	  string += "x";
+		string += "x";
 
     arr += string + "\n";
   }
@@ -11,6 +11,6 @@ const increaseFunc = (length) =>{
   return arr;
 }
 
-let long = 7;
+const long = 7;
 
 console.log(increaseFunc(long));
