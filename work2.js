@@ -1,12 +1,12 @@
-const examinationOutput = (string) =>{
-  let newString = '';
+const rangeTextOutput = (string) =>{
+	let newString = '';
   const stringlong = string.length; 
 	
-  if (string.length > 5){
+  if (string.length > 5) {
       newString = string.slice(0, 3) + string.slice(-3);
   } else {
  for (let i = 1; i < long; i++) {
-      newString = newString + string.slice(0,1);
+    newString = newString + string.slice(0,1);
   	}
 	}
   
@@ -14,4 +14,4 @@ const examinationOutput = (string) =>{
 }
 
 const words = 'text';
-console.log(examinationOutput(words));
+console.log(rangeTextOutput(words));
