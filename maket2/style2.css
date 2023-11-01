@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.progress__load {
+.progress-progress__load {
   width: 35%;
   height: 90%;
   border-top-left-radius: 9px;
