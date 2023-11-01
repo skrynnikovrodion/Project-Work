@@ -1,15 +1,12 @@
-const replacementObj = (array) =>{
+const rerangeObj = (array) => {
 	let indexMax = 0;
 	let indexMin = 0;
 	let save = 0;
 	let newArr = array.slice();
 
-	for (let i = 0; i < array.length; i++){
-			indexMax = (array[indexMax] > array[i]) ? indexMax : i;
-	}
-
-	for (let j = 0; j < array.length; j++){
-			indexMin = (array[indexMin] < array[i]) ? indexMin : i;
+	for (let i = 0; i < array.length; i++) {
+		indexMax = (array[indexMax] > array[i]) ? indexMax : i;
+		indexMin = (array[indexMin] < array[i]) ? indexMin : i;
 	}
 	
 	save = newArr[indexMax];
