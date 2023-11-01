@@ -1,19 +1,19 @@
-const renameFunc = (string) =>{
-  const mastring = [];
+const renameFunc = (string) => {
+  const strArray = [];
 
-  for (let i = 0; i < string.length; i++){
+  for (let i = 0; i < string.length; i++) {
 		switch (string[i]) {
 			case '_':
-				mastring.push(0);
+				strArray.push(0);
 				break;
 				
 			case '-':
-				mastring.push(1);
+				strArray.push(1);
 				break;
 		}
 	}
 
-  const result = mastring.join("");
+  const result = strArray.join("");
 
   return result;
 }
