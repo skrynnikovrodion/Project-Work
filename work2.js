@@ -3,7 +3,7 @@ const rangeTextOutput = (string) =>{
   const stringlong = string.length; 
 	
   if (string.length > 5) {
-      newString = string.slice(0, 3) + string.slice(-3);
+    newString = string.slice(0, 3) + string.slice(-3);
   } else {
  for (let i = 1; i < long; i++) {
     newString = newString + string.slice(0,1);
