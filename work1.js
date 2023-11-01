@@ -2,7 +2,9 @@ const sortElements = (arr, direction) => {
   let newArr = arr.slice(0);
   let result = newArr.sort((a,b) => a - b);
 
-  newArr = (direction === 'asc') ? result : newArr = (direction === 'desc') ? result.reverse() : console.log("не верно введены переменные");
+  newArr = (direction === 'asc') 
+    ? result 
+    : result.reverse();
   
   return newArr;
 }
