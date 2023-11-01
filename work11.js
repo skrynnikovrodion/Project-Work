@@ -1,11 +1,11 @@
 const checkString = (string) => {
-  const mastring = string.split();
-  const phpcode =  /^[a-c]+$/;
-  const result = mastring.map(e => phpcode.test(e));
+  const strArray = string.split();
+  const hypertext =  /^[a-c]+$/;
+  const result = strArray.map(e => hypertext.test(e));
 
   return result;
 }
 
-const abracadabra = 'abcbacabcbcabcbaba';
+const text = 'abcbacabcbcabcbaba';
 
-console.log(testString(abracadabra));
+console.log(checkString(text));
