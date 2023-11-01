@@ -1,4 +1,4 @@
-const generatrandom = (number) => {
+const camelCase = (number) => {
   const random = Math.floor(Math.random() * number.length);
 
   return number[random];
@@ -6,4 +6,4 @@ const generatrandom = (number) => {
 
 const arr = [4, 8, 2, 9, 4, 6, 5, 1, 7, 4];
 
-console.log(generatrandom(arr));
+console.log(camelCase(arr));
