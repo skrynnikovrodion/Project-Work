@@ -1,20 +1,7 @@
-const sortFunk = (array, direction, index) =>{
-  let result = [];
+const sortArray = (array, direction, serchObj) => {  
+  const result = JSON.parse(JSON.stringify(array));
+  result.sort((a, b) => a[serchObj] < b[serchObj] ? 1 : -1);
 
-  switch (index){
-    case 'name':
-      result = array.sort((a, b) => a.name < b.name ? 1 : -1);
-      break;
-
-    case 'age':
-      result = array.sort((a, b) => a.age < b.age ? 1 : -1);
-      break;
-
-    case 'country':
-      result = array.sort((a, b) => a.country < b.country ? 1 : -1);
-      break;
-  }
-  
   switch (direction) {
     case 'desc':
       result;
@@ -34,4 +21,4 @@ const arr = [
   {name: 'test1', age: 54, country: 'RF'}
 ];
 
-console.log(sortFunk(arr, 'asc', 'age'));
+console.log(sortArray(arr, 'asc', 'age'));
