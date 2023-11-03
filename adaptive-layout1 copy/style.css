@@ -1,5 +1,76 @@
-.logo {
+.logotipe {
   position: relative;
+  display: block;
+  background-image: none;
+  box-sizing: border-box;
+}
+
+.logotipe__items {
+  justify-content: center;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.logotipe-items__link {
+  margin: 10px auto 0 0;
+}
+
+.logotipe-items__sheet {
+  display: table;
+  white-space: nowrap;
+  position: relative;
+  line-height: 1;
+  margin: -37px 0 22px auto;
+}
+
+.logotipe-items-sheet-burger__link {
+  text-decoration: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: calc(1em + 8px);
+  display: none;
+  color: inherit;
+}
+
+.logotipe-items-sheet__pages {
+  font-family: 'Open Sans',sans-serif;
+}
+
+.logotipe-items-sheet-pages__list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.logotipe-items-sheet-pages-list__page {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.logotipe-items-sheet-pages-list-page__head {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.logotipe-items-sheet-pages-list__page :hover {
+
+  color: rgb(0, 81, 255);
+}
+
+.logotipe-items-sheet-pages-list-page__head_blue {
+  color: rgb(0, 110, 255);
 }
 
 .house {
@@ -76,6 +147,14 @@
 }
 
 @media (max-width: 1199px) {
+  .logotipe-items__sheet {
+    width: auto;
+  }
+
+  .logotipe__items {
+    width: 940px; 
+  }
+
   .house {
     min-height: 1405px;
   }
@@ -98,6 +177,18 @@
 }
 
 @media (max-width: 991px){
+  .logotipe__items {
+    width: 720px;
+  }
+
+  .logotipe-items-sheet-burger__link  {
+    display: block;
+  }
+
+  .logotipe-items-sheet__pages {
+    display: none;
+  }
+
   .house {
     min-height: 1906px;
   }
@@ -120,6 +211,10 @@
 }
 
 @media (max-width: 767px){
+  .logotipe__items {
+    width: 540px;
+  }
+
   .house {
     min-height: 1817px;
   }
@@ -149,17 +244,12 @@
 }
 
 @media (max-width: 575px){
-  .logo {
+  .logotipe {
     background-image: none;
   }
-  
-  .logo-form__link {
-    margin-top: 22px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    width: 64px;
-    height: 32px;  
+
+  .logotipe__items {
+    width: 340px;
   }
 
   .house {
