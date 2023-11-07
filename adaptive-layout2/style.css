@@ -73,6 +73,29 @@
   color: rgb(255, 166, 0);
 }
 
+.additionaly {
+  color: #ffffff;
+  background-color: #333333;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.additionaly__info {
+  position: relative;
+  width: 1140px;
+  margin: 0 auto;
+  min-height: 120px;
+}
+
+.additionaly-info__text {
+  width: 417px;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  margin-left: auto;
+  margin-right: auto
+}
 
 .main {
   background-color: rgb(223, 223, 223);
@@ -221,6 +244,11 @@
     width: 940px; 
   }
 
+  .additionaly__info {
+    width: 940px;
+    min-height: 99px;
+  }
+
   .main__menu {
     min-height: 670px;
     width: 940px;
@@ -250,6 +278,11 @@
     display: none;
   }
 
+  .additionaly__info {
+    min-height: 76px;
+    width: 720px;
+  }
+
   .main__menu {
     width: 720px;
   }
@@ -276,7 +309,12 @@
   .logotipe__items {
     width: 540px;
   }
-
+  
+  .additionaly__info {
+    width: 540px;
+    min-height: 57px;
+  } 
+  
   .main__menu {
     width: 540px;
   }
@@ -312,6 +350,15 @@
     width: 340px;
   }
 
+  .additionaly__info {
+    min-height: 36px;
+    width: 340px;
+  }
+  
+  .additionaly-info__text {
+    width: 340px;
+  }
+  
   .main__menu {
     min-height: 2322px;
     width: 340px;
