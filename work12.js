@@ -1,7 +1,6 @@
-const rerangeObj = (array) => {
+const givePriority = (array) => {
 	let indexMax = 0;
 	let indexMin = 0;
-	let save = 0;
 	let newArr = array.slice();
 
 	for (let i = 0; i < array.length; i++) {
@@ -9,9 +8,9 @@ const rerangeObj = (array) => {
 		indexMin = (array[indexMin] < array[i]) ? indexMin : i;
 	}
 	
-	save = newArr[indexMax];
+	let indexObj = newArr[indexMax];
 	newArr[indexMax] = newArr[indexMin];
-	newArr[indexMin] = save;
+	newArr[indexMin] = indexObj;
 	
 	return newArr;
 }
