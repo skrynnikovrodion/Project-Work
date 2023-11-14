@@ -1,7 +1,7 @@
 const checkString = (string) => {
   const strArray = string.split();
-  const hypertext =  /^[a-c]+$/;
-  const result = strArray.map(e => hypertext.test(e));
+  const regexp =  /^[a-c]+$/;
+  const result = strArray.map(event => regexp.test(event));
 
   return result;
 }
