@@ -1,5 +1,5 @@
 const sortArray = (array, direction, serchObj) => {  
-  const result = JSON.parse(JSON.stringify(array));
+  let result = structeredClone(array);
   result.sort((a, b) => a[serchObj] < b[serchObj] ? 1 : -1);
 
   switch (direction) {
