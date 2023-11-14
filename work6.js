@@ -1,11 +1,12 @@
-const additArray = (array) => {
+const sumObjArray = (array) => {
   const resultObject = {};
   
   for (let item of array) {
     const resultValue = resultObject[item.name];
     
-    resultValue ? resultValue.price += item.price 
-    : resultObject[item.name] = { ...item };
+    resultValue 
+      ? resultValue.price += item.price 
+      : resultObject[item.name] = { ...item };
   }
 
   const result = Object.values(resultObject);
@@ -19,4 +20,4 @@ const table =
 {name: 'test', price: 100},
 {name: 'test', price: 600}];
 
-console.log(resultArray(table));
+console.log(sumObjArray(table));
