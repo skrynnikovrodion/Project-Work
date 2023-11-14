@@ -1,5 +1,5 @@
 const sortElements = (arr, direction) => {
-  let newArr = arr.slice(0);
+  let newArr = structuredClone(arr);
   let result = newArr.sort((a,b) => a - b);
 
   newArr = (direction === 'asc') 
