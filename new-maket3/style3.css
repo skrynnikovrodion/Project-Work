@@ -1,0 +1,14 @@
+.diagram {
+  background: #b0ff90;
+  width: 200px; 
+  height: 200px;
+  border: 30px solid #95CD8B;
+  border-right: 30px solid #9af148;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.diagram__text {
+  text-align: center;
+  font-size: 60px;
+}
